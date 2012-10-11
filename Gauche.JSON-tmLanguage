@@ -1,0 +1,92 @@
+{ "name": "Gauche",
+  "scopeName": "source.gauche",
+  "fileTypes": ["scm"],
+  "patterns": [
+    {   "name": "comment.line.semicolon.gauche",
+        "comment": "comment",
+        "match": ";.*$\\n?"
+    },
+    {   "name": "meta.language.gauche",
+        "comment": "#f, #t",
+        "match": "(?<=(\\(|\\s|\\)))((\\s*(#f|#t))*)(\\(|\\s|\\))",
+        "captures": {
+            "2": { "name": "constant.language.gauche" }
+        }
+    },
+    {   "name": "meta.numeric.gauche",
+        "comment": "number()",
+        "match": "(?<=(\\(|\\s|\\)))((\\s*(\\d+|#(e|i|b|o|d|x)\\d+))*)(\\(|\\s|\\))",
+        "captures": {
+            "2": { "name": "constant.numeric.gauche" }
+        }
+    },
+    {   "name": "string.quoted.double.gauche",
+        "comment": "string",
+        "begin": "\"",
+        "end": "\"",
+        "patterns": [
+            {   "name": "constant.character.escape.gauche",
+                "match": "\\."
+            }
+        ]
+    },
+    {   "name": "meta.function.gauche",
+        "comment": "(define name",
+        "match": "(?<=(\\(|\\s))(define-syntax|define)\\s([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\()",
+        "captures": {
+            "2": { "name": "support.function.gauche" },
+            "3": { "name": "entity.name.function.gauche"}
+        }
+    },
+    {   "name": "meta.function.gauche",
+        "comment": "(define (name arg1 ...)",
+        "match": "(?<=(\\(|\\s))(define)\\s*\\(([\\w!$%&*+-./:<=>?@^_~]+)((\\s+[\\w!$%&*+-./:<=>?@^_~]*)*)",
+        "captures": {
+            "2": { "name": "support.function.gauche" },
+            "3": { "name": "entity.name.function.gauche" },
+            "4": { "name": "variable.parameter.gauche" }
+        }
+    },
+    {   "name": "meta.function.gauche",
+        "comment": "lambda args",
+        "match": "(?<=(\\(|\\s))(lambda)\\s*\\((([\\w!$%&*+-./:<=>?@^_~]+\\s*)*)",
+        "captures": {
+            "2": { "name": "support.function.gauche" },
+            "3": { "name": "variable.parameter.gauche" }
+        }
+    },
+    {   "name": "meta.function.gauche",
+        "comment": "named let (let name ((var1 foo) ...)",
+        "match": "(?<=(\\(|\\s))(let)\\s+([\\w!$%&*+-./:<=>?@^_~]+)",
+        "captures": {
+            "2": { "name": "support.function.gauche" },
+            "3": { "name": "entity.name.function.gauche" }
+        }
+    },
+    {   "name": "meta.function.gauche",
+        "match": "(?<=(\\(|\\s))(define-syntax|let-syntax|letrec-syntax|syntax-rules)(\\s|\\()",
+        "captures": {
+            "2": { "name": "support.function.gauche" }
+        }
+    },
+    {   "name": "meta.function.gauche",
+        "match": "(?<=(\\(|\\s))(define|lambda|letrec|let\\*|let|do)(\\s|\\()",
+        "captures": {
+            "2": { "name": "support.function.gauche" }
+        }
+    },
+    {   "name": "meta.control.gauche",
+        "match": "(?<=(\\(|\\s))(if|cond|else|case|and|or|begin)(\\s|\\()",
+        "captures": {
+            "2": { "name": "keyword.control.gauche" }
+        }
+    },
+    {   "name": "meta.operator.gauche",
+        "match": "(?<=(\\(|\\s))(force|delay|call-with-current-continuation|call/cc|values|call-with-values|dynamic-wind|eval|call-with-input-file|call-with-output-file|map|for-each)(\\s|\\()",
+        "captures": {
+            "2": { "name": "keyword.operator.gauche" }
+        }
+    }
+  ],
+  "uuid": "b5925227-2a05-405b-8793-3fd13033a25e"
+}
