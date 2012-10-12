@@ -79,7 +79,7 @@
 					<key>name</key>
 					<string>support.function.scheme</string>
 				</dict>
-				<key>5</key>
+				<key>4</key>
 				<dict>
 					<key>name</key>
 					<string>entity.name.function.scheme</string>
@@ -88,7 +88,28 @@
 			<key>comment</key>
 			<string>define with name</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))((?i:define(|-syntax)))(\s|\s*\(\s*)([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
+			<string>(?&lt;=(\(|\s))((?i:define(|-syntax)))\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
+			<key>name</key>
+			<string>meta.function.scheme</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.scheme</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.scheme</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>define with (name)</string>
+			<key>match</key>
+			<string>(?&lt;=(\(|\s))((?i:define))\s*\(\s*([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
 			<key>name</key>
 			<string>meta.function.scheme</string>
 		</dict>

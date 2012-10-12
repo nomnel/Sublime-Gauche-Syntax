@@ -8,7 +8,9 @@
 ("string")
 
 ; define with name
-(define (name ) ) (define name ) (define-syntax name )
+(define name ) (define-syntax name )
+; define with (name)
+(define (name ) )
 ; named let
 (let loop )
 ; define syntax

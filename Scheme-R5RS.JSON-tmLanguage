@@ -32,10 +32,18 @@
     },
     {   "name": "meta.function.scheme",
         "comment": "define with name",
-        "match": "(?<=(\\(|\\s))((?i:define(|-syntax)))(\\s|\\s*\\(\\s*)([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\()",
+        "match": "(?<=(\\(|\\s))((?i:define(|-syntax)))\\s([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\()",
         "captures": {
             "2": { "name": "support.function.scheme" },
-            "5": { "name": "entity.name.function.scheme"}
+            "4": { "name": "entity.name.function.scheme"}
+        }
+    },
+    {   "name": "meta.function.scheme",
+        "comment": "define with (name)",
+        "match": "(?<=(\\(|\\s))((?i:define))\\s*\\(\\s*([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\()",
+        "captures": {
+            "2": { "name": "support.function.scheme" },
+            "3": { "name": "entity.name.function.scheme"}
         }
     },
     {   "name": "meta.function.scheme",
