@@ -11,9 +11,14 @@
 ; signal exception
 (raise ) (error ) (error )
 ; define with name
-(define name ) (define-syntax name )
+(define name ) (define-syntax name ) (define-constant name )
+(define-in-module name ) (define-record-type name )
 ; define with (name)
-(define (name ) )
+(define (name ) ) (define-constant (name ) ) (define-in-module (name ) )
+; define with name, super
+(define-condition-type name supertype )
+; define with (name, super)
+(define-record-type (name parent ) )
 ; named let
 (let loop )
 ; define syntax
