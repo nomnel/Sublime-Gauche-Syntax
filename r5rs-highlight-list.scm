@@ -8,11 +8,7 @@
 ("string")
 
 ; define with name
-(define name ) (define-syntax name )
-; define with name, args
-(define (name arg1 arg2) )
-; lambda with args
-(lambda (arg1 arg2) )
+(define (name ) ) (define name ) (define-syntax name )
 ; named let
 (let loop )
 ; define syntax
