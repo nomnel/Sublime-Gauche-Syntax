@@ -12,7 +12,7 @@
 (raise ) (error ) (error )
 ; define with name
 (define name ) (define-syntax name ) (define-constant name )
-(define-in-module name ) (define-record-type name )
+(define-in-module name ) (define-record-type name ) (define-module name )
 ; define with (name)
 (define (name ) ) (define-constant (name ) ) (define-in-module (name ) )
 ; define with name, super
@@ -21,11 +21,13 @@
 (define-record-type (name parent ) )
 ; named let
 (let loop )
+; keyword with name
+(use name) (select-module name)
 ; define syntax
 (define-syntax ) (let-syntax ) (letrec-syntax ) (syntax-rules )
 ; define-*
 (define-condition-type ) (define-constant ) (define-in-module )
-(define-values ) (define-reader-ctor ) (define-record-type )
+(define-values ) (define-reader-ctor ) (define-record-type ) (define-module )
 ; lambda
 (define ) (lambda ) (^ ) (^a ) ($ ) (cut ) (cute ) (case-lambda )
 ; binding
@@ -44,7 +46,8 @@
 (match ) (rxmatch-case ) (rxmatch-cond ) (rxmatch-if )
 ; misc keywords
 (shift ) (reset ) (force ) (delay ) (lazy ) (eager )
-(values ) (eval ) (apply ) (map ) (for-each ) (hash-table-map ) (hash-table-for-each )
+(values ) (eval ) (apply ) (map ) (for-each )(hash-table-map ) (hash-table-for-each )
+(export ) (export-all ) (import ) (use ) (extend ) (select-module )
 ; call-with-*
 (call/cc ) (call/pc ) (call-with-builder ) (call-with-cgi-script )
 (call-with-client-socket ) (call-with-current-continuation )

@@ -118,7 +118,7 @@
 			<key>comment</key>
 			<string>define with name</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))(define(|-syntax|-constant|-in-module|-record-type))\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
+			<string>(?&lt;=(\(|\s))(define(|-syntax|-constant|-in-module|-record-type|-module))\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
 			<key>name</key>
 			<string>meta.function.gauche</string>
 		</dict>
@@ -222,6 +222,27 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
+					<string>keyword.operator.gauche</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.gauche</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>keyword with name</string>
+			<key>match</key>
+			<string>(?&lt;=(\(|\s))(use|select-module)\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\(|\))</string>
+			<key>name</key>
+			<string>meta.operator.gauche</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
 					<string>support.function.gauche</string>
 				</dict>
 			</dict>
@@ -244,7 +265,7 @@
 			<key>comment</key>
 			<string>define-*</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))(define-(condition-type|constant|in-module|values|reader-ctor|record-type))(\s|\()</string>
+			<string>(?&lt;=(\(|\s))(define-(condition-type|constant|in-module|values|reader-ctor|record-type|module))(\s|\()</string>
 			<key>name</key>
 			<string>meta.function.gauche</string>
 		</dict>
@@ -340,7 +361,7 @@
 			<key>comment</key>
 			<string>misc keywords</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))(shift|reset|force|delay|lazy|eager|values|eval|apply|(|hash-table-)(map|for-each))(\s|\()</string>
+			<string>(?&lt;=(\(|\s))(shift|reset|force|delay|lazy|eager|values|eval|apply|(|hash-table-)(map|for-each)|export(|-all)|import|use|extend|select-module)(\s|\()</string>
 			<key>name</key>
 			<string>meta.operator.gauche</string>
 		</dict>
