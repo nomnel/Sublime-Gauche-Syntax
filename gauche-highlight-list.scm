@@ -48,7 +48,7 @@
 (match ) (rxmatch-case ) (rxmatch-cond ) (rxmatch-if )
 ; misc keywords
 (shift ) (reset ) (force ) (delay ) (lazy ) (eager )
-(values ) (eval ) (apply ) (map ) (for-each )(hash-table-map ) (hash-table-for-each )
+(values ) (eval ) (apply ) (filter ) (map ) (for-each ) (hash-table-map ) (hash-table-for-each )
 (export ) (export-all ) (import ) (use ) (extend ) (select-module )
 ; call-with-*
 (call/cc ) (call/pc ) (call-with-builder ) (call-with-cgi-script )
