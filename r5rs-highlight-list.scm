@@ -22,7 +22,6 @@
 ; control
 (if ) (cond ) (else ) (case ) (and ) (or ) (begin ) (dynamic-wind )
 ; misc keywords
-(force ) (delay ) (map ) (for-each ) (eval )
+(force ) (delay ) (map ) (for-each ) (eval ) (values )
 (call/cc ) (call-with-current-continuation )
-(values ) (call-with-values )
-(call-with-input-file ) (call-with-output-file )
+(call-with-values ) (call-with-input-file ) (call-with-output-file )

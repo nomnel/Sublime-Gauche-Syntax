@@ -79,7 +79,7 @@
 					<key>name</key>
 					<string>support.function.scheme</string>
 				</dict>
-				<key>3</key>
+				<key>4</key>
 				<dict>
 					<key>name</key>
 					<string>entity.name.function.scheme</string>
@@ -88,7 +88,7 @@
 			<key>comment</key>
 			<string>define with name</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))((?i:define-syntax|define))\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
+			<string>(?&lt;=(\(|\s))((?i:define(|-syntax)))\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
 			<key>name</key>
 			<string>meta.function.scheme</string>
 		</dict>
@@ -172,7 +172,7 @@
 			<key>comment</key>
 			<string>define syntax</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))((?i:define-syntax|let-syntax|letrec-syntax|syntax-rules))(\s|\()</string>
+			<string>(?&lt;=(\(|\s))((?i:(define|let(|rec))-syntax|syntax-rules))(\s|\()</string>
 			<key>name</key>
 			<string>meta.function.scheme</string>
 		</dict>
@@ -188,7 +188,7 @@
 			<key>comment</key>
 			<string>lambda</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))((?i:define|lambda|letrec|let\*|let|do))(\s|\()</string>
+			<string>(?&lt;=(\(|\s))((?i:define|lambda|let(|\*|rec)|do))(\s|\()</string>
 			<key>name</key>
 			<string>meta.function.scheme</string>
 		</dict>
@@ -220,7 +220,7 @@
 			<key>comment</key>
 			<string>misc keywords</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))((?i:force|delay|call-with-current-continuation|call/cc|values|call-with-values|eval|call-with-input-file|call-with-output-file|map|for-each))(\s|\()</string>
+			<string>(?&lt;=(\(|\s))((?i:force|delay|map|for-each|eval|values|call/cc|call-with-(current-continuation|values|input-file|output-file)))(\s|\()</string>
 			<key>name</key>
 			<string>meta.operator.scheme</string>
 		</dict>

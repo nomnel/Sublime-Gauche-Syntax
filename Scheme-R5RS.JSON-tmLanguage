@@ -32,10 +32,10 @@
     },
     {   "name": "meta.function.scheme",
         "comment": "define with name",
-        "match": "(?<=(\\(|\\s))((?i:define-syntax|define))\\s([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\()",
+        "match": "(?<=(\\(|\\s))((?i:define(|-syntax)))\\s([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\()",
         "captures": {
             "2": { "name": "support.function.scheme" },
-            "3": { "name": "entity.name.function.scheme"}
+            "4": { "name": "entity.name.function.scheme"}
         }
     },
     {   "name": "meta.function.scheme",
@@ -65,14 +65,14 @@
     },
     {   "name": "meta.function.scheme",
         "comment": "define syntax",
-        "match": "(?<=(\\(|\\s))((?i:define-syntax|let-syntax|letrec-syntax|syntax-rules))(\\s|\\()",
+        "match": "(?<=(\\(|\\s))((?i:(define|let(|rec))-syntax|syntax-rules))(\\s|\\()",
         "captures": {
             "2": { "name": "support.function.scheme" }
         }
     },
     {   "name": "meta.function.scheme",
         "comment": "lambda",
-        "match": "(?<=(\\(|\\s))((?i:define|lambda|letrec|let\\*|let|do))(\\s|\\()",
+        "match": "(?<=(\\(|\\s))((?i:define|lambda|let(|\\*|rec)|do))(\\s|\\()",
         "captures": {
             "2": { "name": "support.function.scheme" }
         }
@@ -86,7 +86,7 @@
     },
     {   "name": "meta.operator.scheme",
         "comment": "misc keywords",
-        "match": "(?<=(\\(|\\s))((?i:force|delay|call-with-current-continuation|call/cc|values|call-with-values|eval|call-with-input-file|call-with-output-file|map|for-each))(\\s|\\()",
+        "match": "(?<=(\\(|\\s))((?i:force|delay|map|for-each|eval|values|call/cc|call-with-(current-continuation|values|input-file|output-file)))(\\s|\\()",
         "captures": {
             "2": { "name": "keyword.operator.scheme" }
         }
