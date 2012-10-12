@@ -86,7 +86,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>(define name</string>
+			<string>define with name</string>
 			<key>match</key>
 			<string>(?&lt;=(\(|\s))((?i:define-syntax|define))\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
 			<key>name</key>
@@ -112,7 +112,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>(define (name arg1 ...)</string>
+			<string>define with name, args</string>
 			<key>match</key>
 			<string>(?&lt;=(\(|\s))((?i:define))\s*\(([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)((\s+[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]*)*)</string>
 			<key>name</key>
@@ -133,7 +133,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>lambda args</string>
+			<string>lambda with args</string>
 			<key>match</key>
 			<string>(?&lt;=(\(|\s))((?i:lambda))\s*\((([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+\s*)*)</string>
 			<key>name</key>
@@ -154,7 +154,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>named let (let name ((var1 foo) ...)</string>
+			<string>named let</string>
 			<key>match</key>
 			<string>(?&lt;=(\(|\s))((?i:let))\s+([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)</string>
 			<key>name</key>
@@ -169,6 +169,8 @@
 					<string>support.function.scheme</string>
 				</dict>
 			</dict>
+			<key>comment</key>
+			<string>define syntax</string>
 			<key>match</key>
 			<string>(?&lt;=(\(|\s))((?i:define-syntax|let-syntax|letrec-syntax|syntax-rules))(\s|\()</string>
 			<key>name</key>
@@ -183,6 +185,8 @@
 					<string>support.function.scheme</string>
 				</dict>
 			</dict>
+			<key>comment</key>
+			<string>lambda</string>
 			<key>match</key>
 			<string>(?&lt;=(\(|\s))((?i:define|lambda|letrec|let\*|let|do))(\s|\()</string>
 			<key>name</key>
@@ -197,8 +201,10 @@
 					<string>keyword.control.scheme</string>
 				</dict>
 			</dict>
+			<key>comment</key>
+			<string>control</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))((?i:if|cond|else|case|and|or|begin))(\s|\()</string>
+			<string>(?&lt;=(\(|\s))((?i:if|cond|else|case|and|or|begin|dynamic-wind))(\s|\()</string>
 			<key>name</key>
 			<string>meta.control.scheme</string>
 		</dict>
@@ -211,8 +217,10 @@
 					<string>keyword.operator.scheme</string>
 				</dict>
 			</dict>
+			<key>comment</key>
+			<string>misc keywords</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))((?i:force|delay|call-with-current-continuation|call/cc|values|call-with-values|dynamic-wind|eval|call-with-input-file|call-with-output-file|map|for-each))(\s|\()</string>
+			<string>(?&lt;=(\(|\s))((?i:force|delay|call-with-current-continuation|call/cc|values|call-with-values|eval|call-with-input-file|call-with-output-file|map|for-each))(\s|\()</string>
 			<key>name</key>
 			<string>meta.operator.scheme</string>
 		</dict>

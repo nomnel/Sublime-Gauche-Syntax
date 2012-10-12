@@ -31,7 +31,7 @@
         ]
     },
     {   "name": "meta.function.scheme",
-        "comment": "(define name",
+        "comment": "define with name",
         "match": "(?<=(\\(|\\s))((?i:define-syntax|define))\\s([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\()",
         "captures": {
             "2": { "name": "support.function.scheme" },
@@ -39,7 +39,7 @@
         }
     },
     {   "name": "meta.function.scheme",
-        "comment": "(define (name arg1 ...)",
+        "comment": "define with name, args",
         "match": "(?<=(\\(|\\s))((?i:define))\\s*\\(([\\w!$%&*+-./:<=>?@^_~]+)((\\s+[\\w!$%&*+-./:<=>?@^_~]*)*)",
         "captures": {
             "2": { "name": "support.function.scheme" },
@@ -48,7 +48,7 @@
         }
     },
     {   "name": "meta.function.scheme",
-        "comment": "lambda args",
+        "comment": "lambda with args",
         "match": "(?<=(\\(|\\s))((?i:lambda))\\s*\\((([\\w!$%&*+-./:<=>?@^_~]+\\s*)*)",
         "captures": {
             "2": { "name": "support.function.scheme" },
@@ -56,7 +56,7 @@
         }
     },
     {   "name": "meta.function.scheme",
-        "comment": "named let (let name ((var1 foo) ...)",
+        "comment": "named let",
         "match": "(?<=(\\(|\\s))((?i:let))\\s+([\\w!$%&*+-./:<=>?@^_~]+)",
         "captures": {
             "2": { "name": "support.function.scheme" },
@@ -64,25 +64,29 @@
         }
     },
     {   "name": "meta.function.scheme",
+        "comment": "define syntax",
         "match": "(?<=(\\(|\\s))((?i:define-syntax|let-syntax|letrec-syntax|syntax-rules))(\\s|\\()",
         "captures": {
             "2": { "name": "support.function.scheme" }
         }
     },
     {   "name": "meta.function.scheme",
+        "comment": "lambda",
         "match": "(?<=(\\(|\\s))((?i:define|lambda|letrec|let\\*|let|do))(\\s|\\()",
         "captures": {
             "2": { "name": "support.function.scheme" }
         }
     },
     {   "name": "meta.control.scheme",
-        "match": "(?<=(\\(|\\s))((?i:if|cond|else|case|and|or|begin))(\\s|\\()",
+        "comment": "control",
+        "match": "(?<=(\\(|\\s))((?i:if|cond|else|case|and|or|begin|dynamic-wind))(\\s|\\()",
         "captures": {
             "2": { "name": "keyword.control.scheme" }
         }
     },
     {   "name": "meta.operator.scheme",
-        "match": "(?<=(\\(|\\s))((?i:force|delay|call-with-current-continuation|call/cc|values|call-with-values|dynamic-wind|eval|call-with-input-file|call-with-output-file|map|for-each))(\\s|\\()",
+        "comment": "misc keywords",
+        "match": "(?<=(\\(|\\s))((?i:force|delay|call-with-current-continuation|call/cc|values|call-with-values|eval|call-with-input-file|call-with-output-file|map|for-each))(\\s|\\()",
         "captures": {
             "2": { "name": "keyword.operator.scheme" }
         }
