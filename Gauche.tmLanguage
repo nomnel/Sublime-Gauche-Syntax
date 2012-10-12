@@ -91,6 +91,22 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
+					<string>variable.parameter.gauche</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>symbol (knowingly, it should be constant.language.gauche)</string>
+			<key>match</key>
+			<string>(?&lt;=(\(|\s|\)))(:[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\(|\s|\))</string>
+			<key>name</key>
+			<string>meta.variable.gauche</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
 					<string>invalid.illegal.gauche</string>
 				</dict>
 			</dict>

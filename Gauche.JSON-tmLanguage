@@ -37,6 +37,13 @@
             }
         ]
     },
+    {   "name": "meta.variable.gauche",
+        "comment": "symbol (knowingly, it should be constant.language.gauche)",
+        "match": "(?<=(\\(|\\s|\\)))(:[\\w!$%&*+-./:<=>?@^_~]+)(\\(|\\s|\\))",
+        "captures": {
+            "2": { "name": "variable.parameter.gauche" }
+        }
+    },
     {   "name": "meta.illegal.gauche",
         "comment": "signal exception",
         "match": "(?<=(\\(|\\s))(raise|error(|f))(\\s|\\()",

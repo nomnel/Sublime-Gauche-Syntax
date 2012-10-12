@@ -8,6 +8,8 @@
 (1 #e2 #i3 #b1 #o2 #d3 #x4)
 ; string
 ("string")
+; symbol
+(:symbol)
 ; signal exception
 (raise ) (error ) (error )
 ; define with name
