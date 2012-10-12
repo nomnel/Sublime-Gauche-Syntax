@@ -61,7 +61,7 @@
     },
     {   "name": "meta.function.gauche",
         "comment": "define with (name)",
-        "match": "(?<=(\\(|\\s))(define(|-constant|-in-module))\\s*\\(\\s*([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\()",
+        "match": "(?<=(\\(|\\s))(define(|-constant|-in-module))\\s*\\(\\s*([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\(|\\))",
         "captures": {
             "2": { "name": "support.function.gauche" },
             "4": { "name": "entity.name.function.gauche"}
@@ -78,7 +78,7 @@
     },
     {   "name": "meta.function.gauche",
         "comment": "define with (name, super)",
-        "match": "(?<=(\\(|\\s))(define-record-type)\\s*\\(\\s*([\\w!$%&*+-./:<=>?@^_~]+)\\s([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\()",
+        "match": "(?<=(\\(|\\s))(define-record-type)\\s*\\(\\s*([\\w!$%&*+-./:<=>?@^_~]+)\\s([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\(|\\))",
         "captures": {
             "2": { "name": "support.function.gauche" },
             "3": { "name": "entity.name.function.gauche"},

@@ -155,7 +155,7 @@
 			<key>comment</key>
 			<string>define with (name)</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))(define(|-constant|-in-module))\s*\(\s*([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
+			<string>(?&lt;=(\(|\s))(define(|-constant|-in-module))\s*\(\s*([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\(|\))</string>
 			<key>name</key>
 			<string>meta.function.gauche</string>
 		</dict>
@@ -207,7 +207,7 @@
 			<key>comment</key>
 			<string>define with (name, super)</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))(define-record-type)\s*\(\s*([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
+			<string>(?&lt;=(\(|\s))(define-record-type)\s*\(\s*([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\(|\))</string>
 			<key>name</key>
 			<string>meta.function.gauche</string>
 		</dict>
