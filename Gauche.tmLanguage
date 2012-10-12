@@ -314,7 +314,7 @@
 			<key>comment</key>
 			<string>misc keywords</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))(shift|reset|force|delay|lazy|eager|values|eval|(|hash-table-)(map|for-each))(\s|\()</string>
+			<string>(?&lt;=(\(|\s))(shift|reset|force|delay|lazy|eager|values|eval|apply|(|hash-table-)(map|for-each))(\s|\()</string>
 			<key>name</key>
 			<string>meta.operator.gauche</string>
 		</dict>

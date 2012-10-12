@@ -41,7 +41,7 @@
 (match ) (rxmatch-case ) (rxmatch-cond ) (rxmatch-if )
 ; misc keywords
 (shift ) (reset ) (force ) (delay ) (lazy ) (eager )
-(values ) (eval ) (map ) (for-each ) (hash-table-map ) (hash-table-for-each )
+(values ) (eval ) (apply ) (map ) (for-each ) (hash-table-map ) (hash-table-for-each )
 ; call-with-*
 (call/cc ) (call/pc ) (call-with-builder ) (call-with-cgi-script )
 (call-with-client-socket ) (call-with-current-continuation )
