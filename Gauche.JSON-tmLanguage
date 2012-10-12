@@ -53,20 +53,11 @@
         }
     },
     {   "name": "meta.function.gauche",
-        "comment": "define with name, args",
-        "match": "(?<=(\\(|\\s))(define)\\s*\\(([\\w!$%&*+-./:<=>?@^_~]+)((\\s+[\\w!$%&*+-./:<=>?@^_~]*)*)",
+        "comment": "define with name",
+        "match": "(?<=(\\(|\\s))(define)\\s*\\(\\s*([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\()",
         "captures": {
             "2": { "name": "support.function.gauche" },
-            "3": { "name": "entity.name.function.gauche" },
-            "4": { "name": "variable.parameter.gauche" }
-        }
-    },
-    {   "name": "meta.function.gauche",
-        "comment": "lambda with args",
-        "match": "(?<=(\\(|\\s))(lambda)\\s*\\((([\\w!$%&*+-./:<=>?@^_~]+\\s*)*)",
-        "captures": {
-            "2": { "name": "support.function.gauche" },
-            "3": { "name": "variable.parameter.gauche" }
+            "3": { "name": "entity.name.function.gauche"}
         }
     },
     {   "name": "meta.function.gauche",
