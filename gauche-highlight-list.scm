@@ -9,7 +9,7 @@
 ; string
 ("string")
 ; symbol
-(:symbol)
+(:key)
 ; signal exception
 (raise ) (error ) (error )
 ; define with name
