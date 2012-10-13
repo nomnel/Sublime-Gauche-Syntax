@@ -2,7 +2,6 @@
 Now this supports R5RS, and Gauche(one of major Scheme implementation). And it will be support R6RS soon.
 
 ## How to install
----
 1. Clone git repo into your packages folder (in ST2, menu(Sublime Text 2 -> Preferences -> Browse Packages…) to open this folder)
 2. Restart ST2 editor
 
@@ -18,5 +17,4 @@ and, this is **optional**, you can change name of syntax group:
 	$ mv Sublime-Scheme-Syntax/ Scheme/
 
 ## REPL
----
 if you want REPL, see also -> `https://github.com/nomnel/SublimeREPL-Scheme`
