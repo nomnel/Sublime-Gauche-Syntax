@@ -11,10 +11,5 @@ Or with package control:
 2. Package Control: Install Package `Sublime-Scheme-Syntax`
 3. Restart ST2 editor
 
-and, this is **optional**, you can change name of syntax group:
-
-	# at your packages folder
-	$ mv Sublime-Scheme-Syntax/ Scheme/
-
 ## REPL
 if you want REPL, see [https://github.com/nomnel/SublimeREPL-Scheme]()
