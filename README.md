@@ -1,11 +1,22 @@
-あとでちゃんと書く。
+# Scheme syntax highlighting for Sublime Text2
+Now this supports R5RS, and Gauche(one of major Scheme implementation). And it will be support R6RS soon.
 
-### インストール
-Sublime Text 2のPackages/Userに`git clone`する。
+## How to install
+---
+1. Clone git repo into your packages folder (in ST2, menu(Sublime Text 2 -> Preferences -> Browse Packages…) to open this folder)
+2. Restart ST2 editor
 
-	Macの場合
-	~/Library/Application Support/Sublime Text 2/Packages/User
+Or with package control:
 
-LinuxとWindowsはあとで調べるかも。
+1. Package Control: Add Repository `https://github.com/nomnel/Sublime-Scheme-Syntax`
+2. Package Control: Install Package `Sublime-Scheme-Syntax`
+3. Restart ST2 editor
 
-`git clone`したらSublime Text 2を再起動する。
+and, this is **optional**, you can change name of syntax group:
+
+	# at your packages folder
+	$ mv Sublime-Scheme-Syntax/ Scheme/
+
+## REPL
+---
+if you want REPL, see also -> `https://github.com/nomnel/SublimeREPL-Scheme`
