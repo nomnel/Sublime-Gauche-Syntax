@@ -12,4 +12,4 @@ Or with package control:
 3. Restart ST2 editor
 
 ## REPL
-if you want REPL, see [https://github.com/nomnel/SublimeREPL-Scheme]()
+if you want REPL, see [https://github.com/nomnel/SublimeREPL-Scheme](https://github.com/nomnel/SublimeREPL-Scheme)
