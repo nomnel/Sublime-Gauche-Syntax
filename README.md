@@ -17,4 +17,4 @@ and, this is **optional**, you can change name of syntax group:
 	$ mv Sublime-Scheme-Syntax/ Scheme/
 
 ## REPL
-if you want REPL, see also -> `https://github.com/nomnel/SublimeREPL-Scheme`
+if you want REPL, see [https://github.com/nomnel/SublimeREPL-Scheme]()
