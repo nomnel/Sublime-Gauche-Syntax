@@ -1,4 +1,7 @@
 ; line comment
+#|
+block comment
+|#
 
 ; reader syntax
 (#,())
