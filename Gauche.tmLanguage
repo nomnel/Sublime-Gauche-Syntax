@@ -101,6 +101,22 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
+					<string>variable.other.gauche</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>gloval variable</string>
+			<key>match</key>
+			<string>(?&lt;=(\(|\s|\)))((\s*(\*[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+\*))*)(\(|\s|\))</string>
+			<key>name</key>
+			<string>meta.variable.gauche</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
 					<string>variable.parameter.gauche</string>
 				</dict>
 			</dict>
