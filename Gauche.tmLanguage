@@ -19,6 +19,16 @@
 			<string>comment.line.semicolon.gauche</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>\#\|</string>
+			<key>comment</key>
+			<string>block comment</string>
+			<key>end</key>
+			<string>\|\#</string>
+			<key>name</key>
+			<string>comment.block.gauche</string>
+		</dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>2</key>

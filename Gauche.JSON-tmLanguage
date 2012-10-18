@@ -6,6 +6,11 @@
         "comment": "comment",
         "match": ";.*$\\n?"
     },
+    {   "name": "comment.block.gauche",
+        "comment": "block comment",
+        "begin": "\\#\\|",
+        "end": "\\|\\#"
+    },
     {   "name": "meta.character.gauche",
         "comment": "reader syntax",
         "match": "(?<=(\\(|\\s|\\)))(\\#\\,)\\(",
