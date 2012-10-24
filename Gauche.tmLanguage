@@ -165,27 +165,6 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>define with name</string>
-			<key>match</key>
-			<string>(?&lt;=(\(|\s))(define(|-syntax|-constant|-in-module|-record-type|-module))\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
-			<key>name</key>
-			<string>meta.function.gauche</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>support.function.gauche</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.gauche</string>
-				</dict>
-			</dict>
-			<key>comment</key>
 			<string>define with (name)</string>
 			<key>match</key>
 			<string>(?&lt;=(\(|\s))(define(|-constant|-in-module))\s*\(\s*([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\(|\))</string>
@@ -241,6 +220,27 @@
 			<string>define with (name, super)</string>
 			<key>match</key>
 			<string>(?&lt;=(\(|\s))(define-record-type)\s*\(\s*([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\(|\))</string>
+			<key>name</key>
+			<string>meta.function.gauche</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.gauche</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.gauche</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>define|define-* with name</string>
+			<key>match</key>
+			<string>(?&lt;=(\(|\s))(define(|-[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+))\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
 			<key>name</key>
 			<string>meta.function.gauche</string>
 		</dict>
@@ -312,9 +312,9 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>define-*</string>
+			<string>define|define-*</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))(define-(condition-type|constant|in-module|values|reader-ctor|record-type|module))(\s|\()</string>
+			<string>(?&lt;=(\(|\s))(define(|-[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+))(\s|\()</string>
 			<key>name</key>
 			<string>meta.function.gauche</string>
 		</dict>
@@ -330,7 +330,7 @@
 			<key>comment</key>
 			<string>lambda</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))(define|lambda|\^(|[_a-z])|\$|cut(|e)|case-lambda)(\s|\()</string>
+			<string>(?&lt;=(\(|\s))(lambda|\^(|[_a-z])|\$|cut(|e)|case-lambda)(\s|\()</string>
 			<key>name</key>
 			<string>meta.function.gauche</string>
 		</dict>

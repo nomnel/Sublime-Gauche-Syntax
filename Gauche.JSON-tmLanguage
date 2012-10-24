@@ -67,14 +67,6 @@
         }
     },
     {   "name": "meta.function.gauche",
-        "comment": "define with name",
-        "match": "(?<=(\\(|\\s))(define(|-syntax|-constant|-in-module|-record-type|-module))\\s([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\()",
-        "captures": {
-            "2": { "name": "support.function.gauche" },
-            "4": { "name": "entity.name.function.gauche"}
-        }
-    },
-    {   "name": "meta.function.gauche",
         "comment": "define with (name)",
         "match": "(?<=(\\(|\\s))(define(|-constant|-in-module))\\s*\\(\\s*([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\(|\\))",
         "captures": {
@@ -101,6 +93,14 @@
         }
     },
     {   "name": "meta.function.gauche",
+        "comment": "define|define-* with name",
+        "match": "(?<=(\\(|\\s))(define(|-[\\w!$%&*+-./:<=>?@^_~]+))\\s([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\()",
+        "captures": {
+            "2": { "name": "support.function.gauche" },
+            "4": { "name": "entity.name.function.gauche"}
+        }
+    },
+    {   "name": "meta.function.gauche",
         "comment": "named let",
         "match": "(?<=(\\(|\\s))(let)\\s+([\\w!$%&*+-./:<=>?@^_~]+)",
         "captures": {
@@ -124,15 +124,15 @@
         }
     },
     {   "name": "meta.function.gauche",
-        "comment": "define-*",
-        "match": "(?<=(\\(|\\s))(define-(condition-type|constant|in-module|values|reader-ctor|record-type|module))(\\s|\\()",
+        "comment": "define|define-*",
+        "match": "(?<=(\\(|\\s))(define(|-[\\w!$%&*+-./:<=>?@^_~]+))(\\s|\\()",
         "captures": {
             "2": { "name": "support.function.gauche" }
         }
     },
     {   "name": "meta.function.gauche",
         "comment": "lambda",
-        "match": "(?<=(\\(|\\s))(define|lambda|\\^(|[_a-z])|\\$|cut(|e)|case-lambda)(\\s|\\()",
+        "match": "(?<=(\\(|\\s))(lambda|\\^(|[_a-z])|\\$|cut(|e)|case-lambda)(\\s|\\()",
         "captures": {
             "2": { "name": "support.function.gauche" }
         }

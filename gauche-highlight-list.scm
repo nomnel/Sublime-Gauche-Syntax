@@ -17,26 +17,24 @@ block comment #|nested|#
 (:key)
 ; signal exception
 (raise ) (error ) (error )
-; define with name
-(define name ) (define-syntax name ) (define-constant name )
-(define-in-module name ) (define-record-type name ) (define-module name )
 ; define with (name)
 (define (name ) ) (define-constant (name ) ) (define-in-module (name ) )
 ; define with name, super
 (define-condition-type name supertype )
 ; define with (name, super)
 (define-record-type (name parent ) )
+; define|define-* with name
+(define name ) (define-* name )
 ; named let
 (let loop )
 ; keyword with name
 (use name) (select-module name)
 ; define syntax
 (define-syntax ) (let-syntax ) (letrec-syntax ) (syntax-rules )
-; define-*
-(define-condition-type ) (define-constant ) (define-in-module )
-(define-values ) (define-reader-ctor ) (define-record-type ) (define-module )
+; define|define-*
+(define ) (define-* )
 ; lambda
-(define ) (lambda ) (^ ) (^a ) ($ ) (cut ) (cute ) (case-lambda )
+(lambda ) (^ ) (^a ) ($ ) (cut ) (cute ) (case-lambda )
 ; binding
 (let ) (let* ) (let*-values ) (letrec ) (let1 ) (let/cc )
 (let-args ) (let-values ) (let-optionals* ) (let-keywords ) (let-keywords* )
