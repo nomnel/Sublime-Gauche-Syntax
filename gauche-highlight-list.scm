@@ -10,7 +10,7 @@ block comment
 ; number
 (1 #e2 #i3 #b1 #o2 #d3 #x4)
 ; string
-("string")
+("string\"")
 ; global variable
 (*global* )
 ; symbol
