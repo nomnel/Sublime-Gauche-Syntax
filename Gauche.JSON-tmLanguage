@@ -138,8 +138,15 @@
         }
     },
     {   "name": "meta.function.gauche",
+        "comment": "binding (let)",
+        "match": "(?<=(\\(|\\s))(let(|\\*|1)(|-[\\w!$%&*+-./:<=>?@^_~]+)|[\\w!$%&*+-./:<=>?@^_~]+-let(|\\*|1)|let(/cc|rec)|rlet1)(\\s|\\()",
+        "captures": {
+            "2": { "name": "support.function.gauche" }
+        }
+    },
+    {   "name": "meta.function.gauche",
         "comment": "binding",
-        "match": "(?<=(\\(|\\s))(let(|\\*(|-values)|rec|1|/cc)|let-(args|values|optionals\\*|keywords(|\\*))|and-let\\*|(fluid|rxmatch)-let|(if-|r)let1|rec|receive|parameterize|get-optional)(\\s|\\()",
+        "match": "(?<=(\\(|\\s))(rec|receive|parameterize|get-optional)(\\s|\\()",
         "captures": {
             "2": { "name": "support.function.gauche" }
         }

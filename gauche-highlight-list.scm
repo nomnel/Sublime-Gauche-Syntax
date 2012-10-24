@@ -35,10 +35,11 @@ block comment #|nested|#
 (define ) (define-* )
 ; lambda
 (lambda ) (^ ) (^a ) ($ ) (cut ) (cute ) (case-lambda )
+; binding (let)
+(let ) (let* ) (let1 ) (letrec ) (let/cc ) (rlet1 )
+(let-foo ) (let*-foo ) (let1-foo )
+(foo-let ) (foo-let* ) (foo-let1 )
 ; binding
-(let ) (let* ) (let*-values ) (letrec ) (let1 ) (let/cc )
-(let-args ) (let-values ) (let-optionals* ) (let-keywords ) (let-keywords* )
-(and-let* ) (fluid-let ) (rxmatch-let ) (if-let1 ) (rlet1 )
 (rec ) (receive ) (parameterize ) (get-optional )
 ; iterator
 (do ) (dolist ) (dotimes ) (while ) (until )

@@ -344,9 +344,25 @@
 				</dict>
 			</dict>
 			<key>comment</key>
+			<string>binding (let)</string>
+			<key>match</key>
+			<string>(?&lt;=(\(|\s))(let(|\*|1)(|-[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)|[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+-let(|\*|1)|let(/cc|rec)|rlet1)(\s|\()</string>
+			<key>name</key>
+			<string>meta.function.gauche</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.gauche</string>
+				</dict>
+			</dict>
+			<key>comment</key>
 			<string>binding</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))(let(|\*(|-values)|rec|1|/cc)|let-(args|values|optionals\*|keywords(|\*))|and-let\*|(fluid|rxmatch)-let|(if-|r)let1|rec|receive|parameterize|get-optional)(\s|\()</string>
+			<string>(?&lt;=(\(|\s))(rec|receive|parameterize|get-optional)(\s|\()</string>
 			<key>name</key>
 			<string>meta.function.gauche</string>
 		</dict>
