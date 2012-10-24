@@ -21,16 +21,16 @@ block comment #|nested|#
 (define-condition-type name supertype )
 ; define with (name, super)
 (define-record-type (name parent ) )
-; define|define-* with name
-(define name ) (define-* name )
+; define|define-foo with name
+(define name ) (define-foo name )
 ; named let
 (let loop )
 ; keyword with name
 (use name) (select-module name)
 ; define syntax
 (define-syntax ) (let-syntax ) (letrec-syntax ) (syntax-rules )
-; define|define-*
-(define ) (define-* )
+; define|define-foo
+(define ) (define-foo )
 ; lambda
 (lambda ) (^ ) (^a ) ($ ) (cut ) (cute ) (case-lambda )
 ; binding (let)

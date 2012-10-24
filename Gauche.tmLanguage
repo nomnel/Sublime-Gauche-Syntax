@@ -222,7 +222,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>define|define-* with name</string>
+			<string>define|define-foo with name</string>
 			<key>match</key>
 			<string>(?&lt;=(\(|\s))(define(|-[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+))\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
 			<key>name</key>
@@ -296,7 +296,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>define|define-*</string>
+			<string>define|define-foo</string>
 			<key>match</key>
 			<string>(?&lt;=(\(|\s))(define(|-[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+))(\s|\()</string>
 			<key>name</key>
