@@ -17,10 +17,6 @@ block comment #|nested|#
 (:key)
 ; define with (name)
 (define (name ) ) (define-constant (name ) ) (define-in-module (name ) )
-; define with name, super
-(define-condition-type name supertype )
-; define with (name, super)
-(define-record-type (name parent ) )
 ; define|define-foo with name
 (define name ) (define-foo name )
 ; named let

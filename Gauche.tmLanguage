@@ -163,58 +163,6 @@
 					<key>name</key>
 					<string>support.function.gauche</string>
 				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.gauche</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>entity.other.inherited-class.gauche</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>define with name, super</string>
-			<key>match</key>
-			<string>(?&lt;=(\(|\s))(define-condition-type)\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
-			<key>name</key>
-			<string>meta.function.gauche</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>support.function.gauche</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.gauche</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>entity.other.inherited-class.gauche</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>define with (name, super)</string>
-			<key>match</key>
-			<string>(?&lt;=(\(|\s))(define-record-type)\s*\(\s*([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\(|\))</string>
-			<key>name</key>
-			<string>meta.function.gauche</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>support.function.gauche</string>
-				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
