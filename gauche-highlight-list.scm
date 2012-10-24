@@ -28,7 +28,7 @@ block comment #|nested|#
 ; define|define-foo
 (define ) (define-foo )
 ; lambda
-(lambda ) (^ ) (^a ) ($ ) (cut ) (cute ) (case-lambda )
+(lambda ) (^ ) (^a ) ($ foo $ ) (cut ) (cute ) (case-lambda )
 ; binding (let)
 (let ) (let* ) (let1 ) (letrec ) (let/cc ) (rlet1 )
 (let-foo ) (let*-foo ) (let1-foo )
@@ -49,5 +49,5 @@ block comment #|nested|#
 (shift ) (reset ) (force ) (delay ) (lazy ) (eager )
 (values ) (eval ) (apply ) (filter ) (map ) (for-each ) (hash-table-map ) (hash-table-for-each )
 (export ) (export-all ) (import ) (use ) (extend ) (select-module )
-; call-with-*
+; call-with-foo
 (call/cc ) (call/pc ) (call-with-* )

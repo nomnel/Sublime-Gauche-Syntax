@@ -358,7 +358,7 @@
 			<key>comment</key>
 			<string>misc keywords</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))(shift|reset|force|delay|lazy|eager|values|eval|apply|filter|(|hash-table-)(map|for-each)|export(|-all)|import|use|extend|select-module)(\s|\()</string>
+			<string>(?&lt;=(\(|\s))(shift|reset|force|delay|lazy|eager|values|eval|apply|filter|(|[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+-)(map|for-each)|export(|-all)|import|use|extend|select-module)(\s|\()</string>
 			<key>name</key>
 			<string>meta.operator.gauche</string>
 		</dict>
@@ -372,7 +372,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>call-with-*</string>
+			<string>call-with-foo</string>
 			<key>match</key>
 			<string>(?&lt;=(\(|\s))(call/[cp]c|call-with-[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
 			<key>name</key>

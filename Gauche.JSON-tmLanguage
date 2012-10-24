@@ -149,13 +149,13 @@
     },
     {   "name": "meta.operator.gauche",
         "comment": "misc keywords",
-        "match": "(?<=(\\(|\\s))(shift|reset|force|delay|lazy|eager|values|eval|apply|filter|(|hash-table-)(map|for-each)|export(|-all)|import|use|extend|select-module)(\\s|\\()",
+        "match": "(?<=(\\(|\\s))(shift|reset|force|delay|lazy|eager|values|eval|apply|filter|(|[\\w!$%&*+-./:<=>?@^_~]+-)(map|for-each)|export(|-all)|import|use|extend|select-module)(\\s|\\()",
         "captures": {
             "2": { "name": "keyword.operator.gauche" }
         }
     },
     {   "name": "meta.operator.gauche",
-        "comment": "call-with-*",
+        "comment": "call-with-foo",
         "match": "(?<=(\\(|\\s))(call/[cp]c|call-with-[\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\()",
         "captures": {
             "2": { "name": "keyword.operator.gauche" }
