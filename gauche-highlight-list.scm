@@ -15,6 +15,8 @@ block comment #|nested|#
 (*global* )
 ; symbol
 (:key)
+; class
+(<class>)
 ; (define|define-foo (name ) )
 (define (name ) ) (define-foo (name ) )
 ; (define|define-foo name )
@@ -47,7 +49,7 @@ block comment #|nested|#
 (raise ) (error ) (errorf )
 ; misc keywords
 (shift ) (reset ) (force ) (delay ) (lazy ) (eager )
-(values ) (eval ) (apply ) (filter ) (map ) (for-each ) (hash-table-map ) (hash-table-for-each )
+(values ) (eval ) (apply ) (filter ) (map ) (for-each ) (foo-map ) (foo-for-each )
 (export ) (export-all ) (import ) (use ) (extend ) (select-module )
 ; call-with-foo
 (call/cc ) (call/pc ) (call-with-* )

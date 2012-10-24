@@ -140,6 +140,22 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
+					<string>storage.type.gauche</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>class</string>
+			<key>match</key>
+			<string>(?&lt;=(\(|\s|\)))(&lt;[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+&gt;)(\(|\s|\))</string>
+			<key>name</key>
+			<string>meta.entity.gauche</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
 					<string>support.function.gauche</string>
 				</dict>
 				<key>4</key>
