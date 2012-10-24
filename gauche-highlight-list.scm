@@ -15,8 +15,6 @@ block comment #|nested|#
 (*global* )
 ; symbol
 (:key)
-; signal exception
-(raise ) (error ) (error )
 ; define with (name)
 (define (name ) ) (define-constant (name ) ) (define-in-module (name ) )
 ; define with name, super
@@ -50,6 +48,7 @@ block comment #|nested|#
 (if ) (cond ) (cond-expand ) (cond-list ) (else ) (case ) (and ) (or )
 (when ) (unless ) (begin ) (begin0 ) (dynamic-wind ) (guard ) (unwind-protect )
 (match ) (rxmatch-case ) (rxmatch-cond ) (rxmatch-if )
+(raise ) (error ) (errorf )
 ; misc keywords
 (shift ) (reset ) (force ) (delay ) (lazy ) (eager )
 (values ) (eval ) (apply ) (filter ) (map ) (for-each ) (hash-table-map ) (hash-table-for-each )

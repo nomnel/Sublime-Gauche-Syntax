@@ -140,22 +140,6 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>invalid.illegal.gauche</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>signal exception</string>
-			<key>match</key>
-			<string>(?&lt;=(\(|\s))(raise|error(|f))(\s|\()</string>
-			<key>name</key>
-			<string>meta.illegal.gauche</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
 					<string>support.function.gauche</string>
 				</dict>
 				<key>4</key>
@@ -410,7 +394,7 @@
 			<key>comment</key>
 			<string>control</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))(if|cond(|-expand|-list)|else|case|and|or|when|unless|begin(|0)|dynamic-wind|guard|unwind-protect|match|rxmatch-(case|cond|if))(\s|\()</string>
+			<string>(?&lt;=(\(|\s))(if|cond(|-expand|-list)|else|case|and|or|when|unless|begin(|0)|dynamic-wind|guard|unwind-protect|match|rxmatch-(case|cond|if)|raise|error(|f))(\s|\()</string>
 			<key>name</key>
 			<string>meta.control.gauche</string>
 		</dict>

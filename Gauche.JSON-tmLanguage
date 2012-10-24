@@ -59,13 +59,6 @@
             "2": { "name": "variable.parameter.gauche" }
         }
     },
-    {   "name": "meta.illegal.gauche",
-        "comment": "signal exception",
-        "match": "(?<=(\\(|\\s))(raise|error(|f))(\\s|\\()",
-        "captures": {
-            "2": { "name": "invalid.illegal.gauche" }
-        }
-    },
     {   "name": "meta.function.gauche",
         "comment": "define with (name)",
         "match": "(?<=(\\(|\\s))(define(|-constant|-in-module))\\s*\\(\\s*([\\w!$%&*+-./:<=>?@^_~]+)(\\s|\\(|\\))",
@@ -167,7 +160,7 @@
     },
     {   "name": "meta.control.gauche",
         "comment": "control",
-        "match": "(?<=(\\(|\\s))(if|cond(|-expand|-list)|else|case|and|or|when|unless|begin(|0)|dynamic-wind|guard|unwind-protect|match|rxmatch-(case|cond|if))(\\s|\\()",
+        "match": "(?<=(\\(|\\s))(if|cond(|-expand|-list)|else|case|and|or|when|unless|begin(|0)|dynamic-wind|guard|unwind-protect|match|rxmatch-(case|cond|if)|raise|error(|f))(\\s|\\()",
         "captures": {
             "2": { "name": "keyword.control.gauche" }
         }
