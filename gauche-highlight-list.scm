@@ -54,11 +54,4 @@ block comment #|nested|#
 (values ) (eval ) (apply ) (filter ) (map ) (for-each ) (hash-table-map ) (hash-table-for-each )
 (export ) (export-all ) (import ) (use ) (extend ) (select-module )
 ; call-with-*
-(call/cc ) (call/pc ) (call-with-builder ) (call-with-cgi-script )
-(call-with-client-socket ) (call-with-current-continuation )
-(call-with-ftp-connection ) (call-with-input-conversion ) (call-with-output-conversion )
-(call-with-input-file ) (call-with-output-file )
-(call-with-input-process ) (call-with-output-process )
-(call-with-input-string ) (call-with-output-string )
-(call-with-iterator ) (call-with-iterators )
-(call-with-process-io ) (call-with-string-io ) (call-with-values )
+(call/cc ) (call/pc ) (call-with-* )
