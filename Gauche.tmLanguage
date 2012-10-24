@@ -149,9 +149,9 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>define with (name)</string>
+			<string>(define|define-foo (name ) )</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))(define(|-constant|-in-module))\s*\(\s*([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\(|\))</string>
+			<string>(?&lt;=(\(|\s))(define(|-[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+))\s*\(\s*([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\(|\))</string>
 			<key>name</key>
 			<string>meta.function.gauche</string>
 		</dict>
@@ -170,7 +170,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>define|define-foo with name</string>
+			<string>(define|define-foo name )</string>
 			<key>match</key>
 			<string>(?&lt;=(\(|\s))(define(|-[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+))\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
 			<key>name</key>

@@ -15,9 +15,9 @@ block comment #|nested|#
 (*global* )
 ; symbol
 (:key)
-; define with (name)
-(define (name ) ) (define-constant (name ) ) (define-in-module (name ) )
-; define|define-foo with name
+; (define|define-foo (name ) )
+(define (name ) ) (define-foo (name ) )
+; (define|define-foo name )
 (define name ) (define-foo name )
 ; named let
 (let loop )
