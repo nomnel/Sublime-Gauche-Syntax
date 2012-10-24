@@ -9,6 +9,9 @@
     {   "name": "comment.block.gauche",
         "comment": "block comment",
         "begin": "\\#\\|",
+        "patterns": [
+            { "include": "$self" }
+        ],
         "end": "\\|\\#"
     },
     {   "name": "meta.character.gauche",
