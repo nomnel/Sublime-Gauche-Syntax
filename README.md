@@ -11,4 +11,4 @@ Or with package control:
 3. Restart ST2 editor
 
 ## REPL
-if you want REPL, see [https://github.com/nomnel/SublimeREPL-Gauche](https://github.com/nomnel/SublimeREPL-Gauche)
+if you want REPL, see [https://github.com/wuub/SublimeREPL](https://github.com/wuub/SublimeREPL)
