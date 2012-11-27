@@ -1,14 +1,7 @@
-# Gauche(one of major Scheme implementation) syntax highlighting for Sublime Text2
+Gauche(one of major Scheme implementation) syntax highlighting for Sublime Text2.
 
-## How to install
-1. Clone git repo into your packages folder (in ST2, menu(Sublime Text 2 -> Preferences -> Browse Packages…) to open this folder)
-2. Restart ST2 editor
-
-Or with package control:
-
-1. Package Control: Add Repository `https://github.com/nomnel/Sublime-Gauche-Syntax`
-2. Package Control: Install Package `Sublime-Gauche-Syntax`
-3. Restart ST2 editor
+## Installation
+Use [Sublime Package Control](http://wbond.net/sublime_packages/package_control), the package is called `Gauche`.
 
 ## REPL
-if you want REPL, see [https://github.com/wuub/SublimeREPL](https://github.com/wuub/SublimeREPL)
+if you want REPL, see [https://github.com/wuub/SublimeREPL](https://github.com/wuub/SublimeREPL).
