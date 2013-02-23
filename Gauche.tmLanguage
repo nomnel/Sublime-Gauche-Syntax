@@ -188,7 +188,7 @@
 			<key>comment</key>
 			<string>(define|define-foo name )</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))(define(|-[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+))\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
+			<string>(?&lt;=(\(|\s))(define(|-[\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+))\s+([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\()</string>
 			<key>name</key>
 			<string>meta.function.gauche</string>
 		</dict>
@@ -230,7 +230,7 @@
 			<key>comment</key>
 			<string>keyword with name</string>
 			<key>match</key>
-			<string>(?&lt;=(\(|\s))(use|select-module)\s([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\(|\))</string>
+			<string>(?&lt;=(\(|\s))(use|select-module)\s+([\w!$%&amp;*+-./:&lt;=&gt;?@^_~]+)(\s|\(|\))</string>
 			<key>name</key>
 			<string>meta.operator.gauche</string>
 		</dict>
