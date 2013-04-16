@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[(let ((${1:variable} ${2:value}))
+	<content><![CDATA[let ((${1:variable} ${2:value}))
   ($0))]]></content>
 	<tabTrigger>let</tabTrigger>
 	<scope>source.gauche</scope>

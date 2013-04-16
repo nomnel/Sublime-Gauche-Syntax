@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[(cond ((${1:test-func} ${2:arg}) ${3:exp})
+	<content><![CDATA[cond ((${1:test-func} ${2:arg}) ${3:exp})
       (else $0))]]></content>
 	<tabTrigger>cond</tabTrigger>
 	<scope>source.gauche</scope>
